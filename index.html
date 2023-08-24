@@ -2,10 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrera</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
-    <h1>Hola mundo soy Igor. ¿Hola como estan?</h1>
-</body>
-</html>
+<!-- La función se activa al cargar el body y esconde los coches -->
+ <body onload="esconder()">
+<!-- la función se recarga cada vez que haga un cambio el select -->
+    <select id="desp1" onchange="actualizar()">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    
+    <!-- El botón 1 Arranca la función timmer() y la carrera, y el botón 2 corta el timmer() 
+      para la carrera y manda los coches atrás. El timmer() es lo que hará que salga el podio-->
+    <button id="boton1" onclick="timmer()">Iniciar</button>
+    <button id="boton2" onclick="myStopFunction()">Reiniciar</button>
+    
+    <!-- Añadir la pista de los coches con la meta incluida -->
+
+    <img id="pista"src="img/background.jpg" >
+      
+    <!-- Cargo todas las imágenes cada una con su id identificativo  -->
+    <div id="imagenes">  
+      <img id="coche1" src="img/car1.png" >
+      <img id="coche2" src="img/car2.png" >
+      <img id="coche3" src="img/car3.png" >
+      <img id="coche4" src="img/car4.png" >
+      <img id="coche5" src="img/car5.png" >
+      <img id="coche6" src="img/car6.png" >
+      <img id="coche7" src="img/car7.png" >
+      <img id="coche8" src="img/car8.png" >
+      <img id="coche9" src="img/car9.png" >
+    </div>
+      
+    <!-- Cargo El script y el final de la pagina -->
+      
+      <script src="script.js"></script>
+  </body>
+  </html>

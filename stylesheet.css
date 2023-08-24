@@ -1,0 +1,62 @@
+
+/* Le doy a la pista el alto necesario la coloco en absolute para moverla y darle espacio para los botones. */
+#pista{
+    height: 670px;
+    position:absolute;
+    left:05px;
+    top:30px;
+}
+/* Doy tamaño a las imágenes y la posición absolute para después colocarlas. */
+
+#imagenes img{
+    width:100px;
+    width:100px;
+    position:absolute;
+}
+/* Coloco las imágenes a la izquierda dando diferentes valores al top para colocarlas unas debajo de otras. */
+#coche1{
+    top:150px;
+    left:0px;
+}
+#coche2{
+    left:0px;
+    top:200px;
+}
+
+#coche3{
+    left:0px;
+    top:250px;
+}
+#coche4{
+    left:0px;
+    top:300px;
+}
+#coche5{
+    left:0px;
+    top:350px;
+}
+#coche6{
+    left:0px;
+    top:400px;
+}
+#coche7{
+    left:0px;
+    top:450px;
+}
+#coche8{
+    left:0px;
+    top:500px;
+}
+#coche9{
+    left:0px;
+    top:550px;
+}
+/* Coloco las imágenes a la izquierda dando diferentes valores al top para colocarlas unas debajo de otras. */
+ol{
+    color:white;
+    position:absolute;
+    top:140px;
+    left:655px;
+    font-size: 35px;
+    font-weight: bolder;
+}
